@@ -1,14 +1,68 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #7b9c81a9;
+/* Header Area */
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 80px;
+  padding: 0 50px;
+  background-color: rgb(227, 247, 227);
+}
+.appLogo{
+  /* position: absolute; */
+  margin-right: 15px;
+  width:70px;
+  margin-left:180px
+}
+.appName{
+  color: #060224a9;
+  font-weight: bold;
+  font-size:1.5rem
+}
+.userLogin{
+  display:flex;
+  gap:20px;
+  color: rgb(161, 108, 10);
+  margin-right:180px
+}
+.userLogin a:hover{
+  color: #0077cc;
+  text-decoration:underline
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* hero image */
+.heroimg{
+  min-height: 120vh;
+  background-image: url('./assets/images/hero_img/hero_img4.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  display:flex;
+  justify-content:center;
+  position:relative;
+  color: white;
+  text-align: center;
+}
+/* creating overlay */
+.heroimg::before{
+  content:"";
+  position:absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:rgba(0,0,0,0.4);
+  z-index:1;
+}
+
+/* textabove overlay */
+.hero-content{
+  position: relative;
+  z-index:2;
 }
