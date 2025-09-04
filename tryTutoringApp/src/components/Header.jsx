@@ -15,6 +15,8 @@ export default function Header(){
       <a href="/login"  target="_blank"> Login </a>
       <a href="/Sign-Up" target="_blank"> Sign-Up </a>
     </nav>
+      
+
     </header>
     
     </>

@@ -25,7 +25,7 @@
   margin-left:180px
 }
 .appName{
-  color: #060224a9;
+  color: #dd4104dc;
   font-weight: bold;
   font-size:1.5rem
 }
@@ -65,4 +65,52 @@
 .hero-content{
   position: relative;
   z-index:2;
+}
+/* searchForm */
+
+.searchForm input[type="search"]{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius:25px;
+  position: relative;
+  z-index: 3;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+/* searchBtn */
+.searchBtn{
+  background: rgb(227, 247, 227);
+  border: none;
+  margin-left: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 3;
+  
+}
+.searchForm{
+  margin-top: 150px;
+}
+.searchForm button:hover{
+
+  background-color: #048370;
+  box-shadow: 0 4px px rgba(0,0,0,0.9);
+}
+.Slogan{
+  position: relative;
+  z-index: 3;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  max-width:15ch;
+  text-align: center;
+  margin:20px auto;
+  box-shadow: 0 4px px rgba(0,0,0,0.9);
 }
